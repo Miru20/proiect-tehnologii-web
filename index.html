@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizualizare Indici Culturali</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Vizualizare Indici Culturali</h1>
+        <p id="descriere-site">
+            Acest site permite vizualizarea indicilor culturali ai orașelor din România pentru perioada 2010-2016. 
+            Selectați un oraș pentru a vedea datele detaliate și graficul aferent.
+        </p>
+
+        <form id="search-form">
+            <label for="oras-select">Alege un oraș:</label>
+            <select id="oras-select" name="oras" required>
+            </select>
+            <button type="submit">Caută</button>
+        </form>
+
+        <div class="data-section">
+            <div id="tabel-container" style="display: none;">
+                <table id="data-table">
+                    <thead>
+                        <tr>
+                            <th>Județ</th>
+                            <th>Oraș</th>
+                            <th>2010</th>
+                            <th>2011</th>
+                            <th>2012</th>
+                            <th>2013</th>
+                            <th>2014</th>
+                            <th>2015</th>
+                            <th>2016</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="grafic-container" style="display: none;">
+                <canvas id="indice-chart" width="400" height="200"></canvas>
+            </div>
+        </div>
+
+        <div id="explicatie-indice" style="display: none; margin-top: 20px;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

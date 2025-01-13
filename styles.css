@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 5px;
+    font-size: 2.5rem;
+    color: #003366;
+}
+
+#descriere-site {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #003366;
+}
+
+select, button {
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.data-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+#tabel-container, #grafic-container {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+}
+
+canvas {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+#explicatie-indice {
+    margin-top: 5px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#explicatie-indice h3 {
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+#explicatie-indice p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #00508b;
+}
+
+.chartjs-render-monitor {
+    border-color: #003366 !important;
+}
